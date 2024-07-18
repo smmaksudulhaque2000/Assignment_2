@@ -1,0 +1,203 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* font-family: "Inter", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* font-family: "Dancing Script", cursive; */
+body {
+  background: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.795),
+    rgba(255, 255, 255, 0.164)
+  );
+  padding: 0% 8%;
+}
+/* Nav-Bar Style Start Here */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.nav-bar-title {
+  color: rgb(230, 83, 60);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.nev-bar-menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px 4px;
+}
+.nav-bar-item {
+  padding: 12px 24px;
+  border-radius: 46px;
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.highlight {
+  background: rgb(230, 83, 60);
+}
+.nav-bar-menu-icon {
+  display: none;
+}
+/* Nav-Bar Style END Here */
+/* Nav-Bar Responsive Media Query Start Here */
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    padding: 5%;
+  }
+  .nev-bar-menu-container {
+    display: none;
+  }
+  .nav-bar-menu-icon {
+    display: block;
+    background: rgb(255, 255, 255);
+  }
+}
+/* Nav-Bar Responsive Media Query End Here */
+/* Banner Style Start Here */
+.banner-container {
+  display: flex;
+  align-items: center;
+  gap: 18%;
+}
+.bnner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.banner-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.87rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.text-style {
+  font-family: "Dancing Script", cursive;
+  font-size: 4.87rem;
+  font-weight: 50;
+}
+.banner-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.031rem;
+}
+.banner-btn {
+  display: flex;
+  gap: 3%;
+}
+.btn {
+  max-width: 224px;
+  padding: 16px 40px;
+  border-radius: 42px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.37rem;
+  letter-spacing: 0px;
+  border: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.primary-btn {
+  background: rgb(230, 83, 60);
+  border: none;
+}
+.stycker {
+  max-width: 210px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 17px 10px;
+  position: absolute;
+}
+.upper-stycker {
+  margin: -450px 0px 0px 240px;
+}
+.upper-stycker-hed {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0px 0px 2.5px 0px;
+}
+.upper-stycker-about {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.81rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2.5px 0px 0px 0px;
+}
+.lower-stycker {
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  align-items: center;
+  gap: 10px;
+  margin-left: -113px;
+  margin-top: -163px;
+}
+.lower-stycker-left {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+}
+.lower-stycker-hed {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0px 0px 2.5px 0px;
+}
+.lower-stycker-about {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.81rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2.5px 0px 0px 0px;
+}
+/* Banner Style END Here */
+/* Banner Responsive Media Query Start Here */
+@media screen and (max-width: 576px) {
+  .banner-container {
+    flex-direction: column;
+  }
+  .upper-stycker {
+    margin: -520px 0px 0px 240px;
+  }
+  .lower-stycker {
+    margin-left: -60px;
+    margin-top: -200px;
+  }
+}
+/* Banner Responsive Media Query End Here */
