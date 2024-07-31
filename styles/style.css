@@ -224,7 +224,7 @@ header {
 /* ------------------------------ */
 /* Main Default Style Start Here */
 main {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -234,6 +234,7 @@ main {
 /* Habit Section Style Start Here */
 .habit {
   margin: 100px auto;
+  max-width: 1200px;
 }
 .habit-container {
   display: flex;
@@ -313,6 +314,9 @@ main {
 /* Habit Section Responsive Media Query End Here */
 /* Habit Section Style END Here */
 /* Join Section Style Start Here */
+.join {
+  max-width: 1200px;
+}
 .join-container {
   display: flex;
   gap: 160px;
@@ -387,7 +391,168 @@ main {
 }
 /* Join Section Responsive Media Query End Here */
 /* Join Section Style END Here */
+/* BMI Section Style Start Here */
+.bmi {
+  max-width: 1300px;
+}
+.bmi-container {
+  display: flex;
+  flex-direction: column;
+}
+.bmi-container-head-title {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+}
+.bmi-container-head-description {
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 50%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.019rem;
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+.bmi-container-content {
+  background: rgb(34, 34, 34);
+  display: flex;
+  padding: 5%;
+  padding-top: 0;
+  margin: 0 auto;
+}
+.bmi-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.bmi-left-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+th {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.bmi-right {
+  width: 50%;
+}
+.bmi-right-content {
+  width: 100%;
+}
+.bmi-right-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.bmi-right-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.019rem;
+}
+.input-txt {
+  color: rgba(255, 255, 255, 0.329);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+#Height,
+#Weight,
+#age {
+  width: 43%;
+  padding: 2%;
+  margin: 1.5%;
+  border: none;
+  margin-left: 0;
+}
+#sex {
+  width: 47%;
+  padding: 2%;
+  margin: 1.5%;
+  border: none;
+  margin-left: 0;
+}
+#activity {
+  width: 96.7%;
+  padding: 2%;
+  margin: 1%;
+  border: none;
+  margin-left: 0;
+}
+.bmi-button {
+  margin-top: 3%;
+}
+.bmi-btn {
+  max-width: 224px;
+  padding: 16px 40px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.37rem;
+  letter-spacing: 0px;
+  border: none;
+}
+/* BMI Section Responsive Media Query Start Here */
+@media screen and (max-width: 576px) {
+  .bmi-container-content {
+    flex-direction: column;
+  }
+  .bmi-left {
+    width: 100%;
+  }
+  .bmi-right {
+    width: 100%;
+  }
+  .bmi-container-head-title,
+  .bmi-container-head-description {
+    margin-left: 6%;
+  }
+  .bmi-container-head-description {
+    max-width: 85%;
+  }
+}
+/* BMI Section Responsive Media Query End Here */
+/* BMI Section Style END Here */
 /* Team Section Style Start Here */
+.team {
+  max-width: 1200px;
+}
 .team-container {
   display: flex;
   flex-direction: column;
