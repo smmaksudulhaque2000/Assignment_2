@@ -29,6 +29,7 @@ header {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
+  padding-top: 20px;
 }
 .nav-bar-title {
   color: rgb(230, 83, 60);
@@ -200,7 +201,8 @@ header {
     justify-content: center;
   }
   .banner-title {
-    max-width: 100%;
+    font-size: 2.97rem;
+    max-width: 90%;
   }
   .banner-image {
     display: block;
@@ -224,7 +226,6 @@ header {
 /* ------------------------------ */
 /* Main Default Style Start Here */
 main {
-  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -244,7 +245,7 @@ main {
   gap: 30px;
 }
 .habit-content {
-  max-width: 47%;
+  max-width: 55%;
 }
 .habit-content-title {
   color: rgb(255, 255, 255);
@@ -297,6 +298,14 @@ main {
 }
 /* Habit Section Responsive Media Query Start Here */
 @media screen and (max-width: 576px) {
+  .habit {
+    margin: 0px auto 50px;
+  }
+  .habit-content-title {
+    color: rgb(255, 255, 255);
+    font-size: 2.1rem;
+    margin-top: 8%;
+  }
   .habit-content {
     max-width: 90%;
   }
@@ -342,7 +351,7 @@ main {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.019rem;
-  width: 60%;
+  width: 90%;
   margin-bottom: 20px;
 }
 .join-btn {
@@ -375,6 +384,9 @@ main {
     flex-direction: column;
     gap: 20px;
   }
+  .join-title {
+    font-size: 2.5rem;
+  }
   .join-btn {
     width: 100%;
   }
@@ -393,7 +405,7 @@ main {
 /* Join Section Style END Here */
 /* BMI Section Style Start Here */
 .bmi {
-  max-width: 1300px;
+  width: 100%;
 }
 .bmi-container {
   display: flex;
@@ -421,9 +433,8 @@ main {
 .bmi-container-content {
   background: rgb(34, 34, 34);
   display: flex;
-  padding: 5%;
-  padding-top: 0;
-  margin: 0 auto;
+  padding: 0% 10% 3% 10%;
+  margin: 0;
 }
 .bmi-left {
   width: 50%;
@@ -518,7 +529,7 @@ td {
 }
 .bmi-btn {
   max-width: 224px;
-  padding: 16px 40px;
+  padding: 16px 60px;
   border-radius: 42px;
   background: rgb(230, 83, 60);
   color: rgb(255, 255, 255);
@@ -532,6 +543,7 @@ td {
 @media screen and (max-width: 576px) {
   .bmi-container-content {
     flex-direction: column;
+    padding-bottom: 10%;
   }
   .bmi-left {
     width: 100%;
@@ -549,6 +561,155 @@ td {
 }
 /* BMI Section Responsive Media Query End Here */
 /* BMI Section Style END Here */
+/* Suppliment Section Style Start Here */
+.suppliment-container {
+  max-width: 1200px;
+}
+.suppliment-title {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.suppliment-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.019rem;
+  text-align: center;
+  max-width: 70%;
+  margin: 20px auto;
+}
+.suppliment-shop {
+  background-color: rgba(97, 96, 96, 0.562);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.shop-items {
+  padding: 4%;
+  padding-bottom: 0;
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(17, 17, 17, 0.781);
+  overflow: hidden;
+}
+.suppliment-img {
+  border-radius: 10px;
+  width: 90%;
+  height: 40%;
+}
+.reating {
+  text-align: center;
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+.suppliment-name {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.019rem;
+  margin: 10px;
+  text-align: center;
+}
+.price {
+  color: rgb(230, 83, 60);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 10px;
+}
+.buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+}
+.quantity-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 5px;
+}
+#buy-quantity {
+  background-color: rgb(151, 151, 151);
+  border-radius: 5px;
+  border: none;
+  width: 45%;
+}
+#buy-quantity::placeholder {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.397);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+.buy-now {
+  margin: 10px;
+  max-width: 100%;
+}
+.suppliment-buy {
+  background-color: rgb(230, 83, 60);
+  width: 230px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.019rem;
+  margin: 0px auto;
+  padding: 5%;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.suppliment-buy:hover {
+  background-color: rgb(133, 18, 0);
+}
+/* Suppliment Section Responsive Media Query Start Here */
+@media screen and (max-width: 576px) {
+  .suppliment-title {
+    font-size: 2.3rem;
+  }
+  .suppliment-description {
+    max-width: 80%;
+    text-align: left;
+  }
+  .suppliment-shop {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .suppliment-shop {
+    padding-top: 4%;
+  }
+  .shop-items {
+    max-height: 450px;
+    box-shadow: none;
+  }
+  .suppliment-img {
+    width: 90%;
+    height: 50%;
+  }
+}
+/* Suppliment Section Responsive Media Query End Here */
+/* Suppliment Section Style END Here */
 /* Team Section Style Start Here */
 .team {
   max-width: 1200px;
@@ -621,6 +782,9 @@ td {
 }
 /* Team Section Responsive Media Query Start Here */
 @media screen and (max-width: 576px) {
+  .team-title {
+    font-size: 2.5rem;
+  }
   .team-description {
     max-width: 80%;
   }
@@ -634,7 +798,7 @@ td {
 /* Main Style End Here */
 /* Footer Style Start Here */
 footer {
-  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1);
   margin: 90px auto 0px;
@@ -708,6 +872,7 @@ footer {
 }
 .copyright-container {
   max-width: 100%;
+  padding: 1%;
 }
 .copyright {
   text-align: center;
@@ -737,6 +902,9 @@ footer {
   }
   .footer-left-title {
     margin-top: 10%;
+  }
+  .copyright-container {
+    padding: 5%;
   }
 }
 /* Footer Responsive Media Query End Here */
