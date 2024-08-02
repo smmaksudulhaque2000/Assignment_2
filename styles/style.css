@@ -1,8 +1,9 @@
 /* Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /* font-family: "Inter", sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-/* font-family: "Dancing Script", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* font-family: "Great Vibes", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/* Google Font */
 /* Full Body Style Start Here */
 body {
   background: rgb(0, 0, 0);
@@ -58,6 +59,11 @@ header {
   line-height: 120%;
   letter-spacing: 0%;
 }
+.nav-bar-item:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 .highlight {
   background: rgb(230, 83, 60);
 }
@@ -68,6 +74,10 @@ header {
 @media screen and (max-width: 576px) {
   .nav-bar {
     padding: 10% 0;
+  }
+  .nav-bar-title {
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
   }
   .nev-bar-menu-container {
     display: none;
@@ -99,9 +109,10 @@ header {
   max-width: 90%;
 }
 .text-style {
-  font-family: "Dancing Script", cursive;
-  font-size: 4.87rem;
-  font-weight: 50;
+  font-family: "Great Vibes", cursive;
+  font-size: 9.87rem;
+  font-weight: 100;
+  line-height: 50px;
 }
 .banner-description {
   color: rgba(255, 255, 255, 0.5);
@@ -127,9 +138,19 @@ header {
   border: none;
   border: 1px solid rgb(255, 255, 255);
 }
+.btn:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 .primary-btn {
   background: rgb(230, 83, 60);
   border: none;
+}
+.primary-btn:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .stycker {
   max-width: 210px;
@@ -203,6 +224,12 @@ header {
   .banner-title {
     font-size: 2.97rem;
     max-width: 90%;
+  }
+  .text-style {
+    font-family: "Great Vibes", cursive;
+    font-size: 5.87rem;
+    font-weight: 100;
+    line-height: 50px;
   }
   .banner-image {
     display: block;
@@ -278,6 +305,10 @@ main {
   border-radius: 100%;
   border: 2px solid rgb(75, 75, 75);
 }
+.habit-image:hover {
+  transform: scaleX(-1) scale(1.2);
+  transition: 1s ease;
+}
 .habit-items-title {
   color: rgb(255, 255, 255);
   font-size: 1.125rem;
@@ -312,12 +343,13 @@ main {
   .habit-items {
     flex-direction: column;
     gap: 20px;
+    gap: 50px;
   }
   .habit-image {
     width: 70%;
   }
-  .habit-items {
-    gap: 50px;
+  .habit-image:hover {
+    transform: scale(1.1);
   }
 }
 /* Habit Section Responsive Media Query End Here */
@@ -366,14 +398,26 @@ main {
   background: rgb(230, 83, 60);
   border: none;
 }
+.join-btn:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 .join-images {
   max-width: 30%;
   overflow: hidden;
   border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .join-image {
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
+}
+.join-image:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
 }
 /* Join Section Responsive Media Query Start Here */
 @media screen and (max-width: 576px) {
@@ -539,6 +583,11 @@ td {
   letter-spacing: 0px;
   border: none;
 }
+.bmi-btn:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 /* BMI Section Responsive Media Query Start Here */
 @media screen and (max-width: 576px) {
   .bmi-container-content {
@@ -561,155 +610,6 @@ td {
 }
 /* BMI Section Responsive Media Query End Here */
 /* BMI Section Style END Here */
-/* Suppliment Section Style Start Here */
-.suppliment-container {
-  max-width: 1200px;
-}
-.suppliment-title {
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 120%;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 0;
-}
-.suppliment-description {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.019rem;
-  text-align: center;
-  max-width: 70%;
-  margin: 20px auto;
-}
-.suppliment-shop {
-  background-color: rgba(97, 96, 96, 0.562);
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.shop-items {
-  padding: 4%;
-  padding-bottom: 0;
-  max-height: 330px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(17, 17, 17, 0.781);
-  overflow: hidden;
-}
-.suppliment-img {
-  border-radius: 10px;
-  width: 90%;
-  height: 40%;
-}
-.reating {
-  text-align: center;
-  opacity: 70%;
-  margin-bottom: 5px;
-}
-.suppliment-name {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.125rem;
-  letter-spacing: 0.019rem;
-  margin: 10px;
-  text-align: center;
-}
-.price {
-  color: rgb(230, 83, 60);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0%;
-  text-align: center;
-  margin: 10px;
-}
-.buy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.quantity {
-  display: flex;
-  justify-content: center;
-}
-.quantity-title {
-  color: rgb(255, 255, 255);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0%;
-  margin: 5px;
-}
-#buy-quantity {
-  background-color: rgb(151, 151, 151);
-  border-radius: 5px;
-  border: none;
-  width: 45%;
-}
-#buy-quantity::placeholder {
-  text-align: left;
-  color: rgba(255, 255, 255, 0.397);
-  font-size: 1.125rem;
-  font-weight: 600;
-  letter-spacing: 0%;
-}
-.buy-now {
-  margin: 10px;
-  max-width: 100%;
-}
-.suppliment-buy {
-  background-color: rgb(230, 83, 60);
-  width: 230px;
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.747);
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.125rem;
-  letter-spacing: 0.019rem;
-  margin: 0px auto;
-  padding: 5%;
-  border: none;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-.suppliment-buy:hover {
-  background-color: rgb(133, 18, 0);
-}
-/* Suppliment Section Responsive Media Query Start Here */
-@media screen and (max-width: 576px) {
-  .suppliment-title {
-    font-size: 2.3rem;
-  }
-  .suppliment-description {
-    max-width: 80%;
-    text-align: left;
-  }
-  .suppliment-shop {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  .suppliment-shop {
-    padding-top: 4%;
-  }
-  .shop-items {
-    max-height: 450px;
-    box-shadow: none;
-  }
-  .suppliment-img {
-    width: 90%;
-    height: 50%;
-  }
-}
-/* Suppliment Section Responsive Media Query End Here */
-/* Suppliment Section Style END Here */
 /* Team Section Style Start Here */
 .team {
   max-width: 1200px;
@@ -795,6 +695,164 @@ td {
 }
 /* Team Section Responsive Media Query End Here */
 /* Team Section Style END Here */
+/* Suppliment Section Style Start Here */
+.suppliment-container {
+  max-width: 1200px;
+}
+.suppliment-title {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.suppliment-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.019rem;
+  text-align: center;
+  max-width: 70%;
+  margin: 20px auto;
+}
+.suppliment-shop {
+  background-color: rgba(97, 96, 96, 0.562);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 2%;
+}
+.shop-items {
+  padding: 4%;
+  padding-bottom: 0;
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 25px 0px rgb(17, 17, 17);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.suppliment-img {
+  border-radius: 10px;
+  width: 90%;
+  height: 40%;
+}
+.suppliment-img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.reating {
+  text-align: center;
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+.suppliment-name {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.019rem;
+  margin: 10px;
+  text-align: center;
+}
+.price {
+  color: rgb(230, 83, 60);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 10px;
+}
+.buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+}
+.quantity-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 5px;
+}
+#buy-quantity {
+  background-color: rgb(151, 151, 151);
+  border-radius: 5px;
+  border: none;
+  width: 45%;
+}
+#buy-quantity::placeholder {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.397);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+.buy-now {
+  margin: 10px;
+  max-width: 100%;
+}
+.suppliment-buy {
+  background-color: rgb(230, 83, 60);
+  width: 230px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.019rem;
+  margin: 0px auto;
+  padding: 5%;
+  border: none;
+  cursor: pointer;
+}
+.suppliment-buy:hover {
+  background-color: rgb(133, 18, 0);
+  transition: background-color 0.3s ease;
+}
+/* Suppliment Section Responsive Media Query Start Here */
+@media screen and (max-width: 576px) {
+  .suppliment-title {
+    font-size: 2.3rem;
+  }
+  .suppliment-description {
+    max-width: 80%;
+    text-align: left;
+  }
+  .suppliment-shop {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10% 0%;
+    gap: 20px;
+  }
+  .shop-items {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px 5px rgb(17, 17, 17);
+    padding: 6%;
+  }
+  .suppliment-img {
+    width: 90%;
+    height: 50%;
+  }
+}
+/* Suppliment Section Responsive Media Query End Here */
+/* Suppliment Section Style END Here */
 /* Main Style End Here */
 /* Footer Style Start Here */
 footer {
