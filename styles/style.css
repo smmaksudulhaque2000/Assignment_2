@@ -414,10 +414,13 @@ main {
 .join-image {
   width: 150%;
   height: 150%;
+  object-fit: none;
+  object-position: 70% 25%;
+  border-radius: 18px;
 }
 .join-image:hover {
   transform: scale(1.2);
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 /* Join Section Responsive Media Query Start Here */
 @media screen and (max-width: 576px) {
@@ -443,6 +446,7 @@ main {
   .join-image {
     width: 100%;
     height: 100%;
+    object-fit: fill;
   }
 }
 /* Join Section Responsive Media Query End Here */
