@@ -6,7 +6,7 @@ This project is a fitness-related website designed to promote health and wellnes
 
 ## Live URL
 
-[Winter Clothing Donation - Live](https://winter-clothing-donation-e20cd.web.app/)
+[Fitness - Live](https://thriving-cat-16d714.netlify.app/)
 
 ## Figma Design
 
